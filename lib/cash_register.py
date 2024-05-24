@@ -16,7 +16,6 @@ class CashRegister:
         if self.discount > 0:
             discount_amount = self.total * (self.discount / 100)
             self.total -= discount_amount
-            # Format the total amount with ".2f" to ensure two decimal places
             print(f"After the discount, the total comes to ${self.total:.0f}.")  # Hint #2
         else:
             print("There is no discount to apply.")
